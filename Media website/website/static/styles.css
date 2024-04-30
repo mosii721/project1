@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.blogs, .slideshow, .signup {
+    padding: 50px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.video-section {
+    display: grid;
+    place-items: center;
+    height: 50vh; /* Full height of the viewport */
+}
+
+.w3-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* adjust as needed */
+  }
+
+  .mySlides {
+    width: 50%;
+    /* Add any other styling you need for the slides */
+  }
+  /* Blog Styling */
+.blog-post {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-post h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.blog-post a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.blog-post a:hover {
+    color: #0056b3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.blog-post {
+    animation: fadeIn 0.5s ease;
+}
+
+/* About Us Styling */
+.about-us {
+    background-color: white;
+    padding:20px 0;
+}
+
+.about-us .container {
+    text-align: center;
+}
+
+.about-us h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-us h3 {
+    color: #555;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.about-us p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    margin-bottom: 10px;
+}
+
+.about-us ul li strong {
+    color: #333;
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-us .container {
+    animation: slideIn 0.5s ease;
+}
+
+.blog-heading {
+    text-align: center;
+    font-size: 36px; /* Adjust font size as needed */
+    color: #333; /* Adjust color to match your design */
+    margin-bottom: 20px; /* Add some space below the heading */
+    text-transform: uppercase; /* Optional: Convert text to uppercase */
+}
+.form-container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.alert {
+    position: relative; /* Added for positioning the button */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+.close-btn {
+    position: absolute; /* Position the button relative to its container */
+    top: 50%; /* Center the button vertically */
+    right: 10px; /* Align the button to the right */
+    transform: translateY(-50%); /* Adjust the vertical alignment */
+    font-size: 20px;
+    cursor: pointer;
+    border: none; /* Remove default button styles */
+    background: none; /* Remove default button styles */
+    padding: 0; /* Remove default button styles */
+}
+
+.close-btn:focus {
+    outline: none; /* Remove focus outline */
+}
